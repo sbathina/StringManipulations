@@ -2,7 +2,7 @@
  * Author: Shyam Bathina
  * Date: Mar 11, 2017
  * File Desc:This class implements 3 methods that can be used to return an array 
- * that has no duplicates while preserving the orginal order
+ * that has no duplicates while preserving the original order
  */
 package com.sample.assessment;
 
