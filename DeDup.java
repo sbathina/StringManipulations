@@ -33,6 +33,9 @@ public class DeDup {
 	/**
 	 * Option 1: Using ArrayList that preserves the order of elements
 	 * 
+	 * Pros: Type safety, cleaner and less complex code Cons: Memory usage and
+	 * cpu timeis more than option 3
+	 * 
 	 * @param randomIntegers
 	 * 
 	 * @return
@@ -51,6 +54,9 @@ public class DeDup {
 	 * Option 2: Using LinkedHashSet which stores unique values and preserves
 	 * order
 	 * 
+	 * Pros: Type Safety, cleaner and less code Cons: Memory usage and cpu time
+	 * is more than Option 3
+	 * 
 	 * @param randomIntegers
 	 * 
 	 * @return
@@ -66,6 +72,14 @@ public class DeDup {
 
 	/**
 	 * Option 3: Without collections api
+	 * 
+	 * Pros: Requires less memory for int array when compared to ArrayList
+	 * (Option 1) or LinkedHashSet (Option 2). Also, it's faster than the other
+	 * 2 options
+	 * 
+	 * Cons: 1. This implementation is specific to int primitive type. This can
+	 * be generalized to accept other primitive types. 2. Removing an element
+	 * without using collections is cumbersome. 3. Type Safety
 	 * 
 	 * @param randomIntegers
 	 * 
