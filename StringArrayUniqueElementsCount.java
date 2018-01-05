@@ -21,8 +21,14 @@ public class StringArrayUniqueElementsCount {
 
 	public static int getNumUniqueCodes(String[] codes) {
 
-		return 0;
-
+        	Set<String> codeSet = new HashSet<String>();
+        	for (String code : codes) {
+            		StringBuffer revCode = new StringBuffer(code).reverse();
+            		if (code != null && !codeSet.contains(revCode.toString())) {
+                		codeSet.add(code);
+            		}
+        	}
+        	return codeSet.size();
 	}
 
 	public static void main(String[] args) {
